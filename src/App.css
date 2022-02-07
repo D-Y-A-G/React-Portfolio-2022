@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --header-height: 3rem;
+  /*========== COLOR FOR EXAMPLE PAGE==========*/
+  --hue-color-second: 350;
+  --first-color-v2: hsl(var(--hue-color-second), 69%, 61%);
+  --first-color-second-v2: hsl(var(--hue-color-second), 69%, 70%);
+  --first-color-third-v2: hsl(var(--hue-color-second), 50%, 25%);
+  --first-color-alt-v2: hsl(var(--hue-color-second), 57%, 53%);
+  /*========== COLOR FOR ALL OTHER PAGES==========*/
+  /* HSL color mode */
+  --hue-color: 220; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --first-color: hsl(var(--hue-color), 69%, 30%);
+  --first-color-second: hsl(var(--hue-color), 69%, 60%);
+  --first-color-third: hsl(var(--hue-color), 50%, 25%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 45%);
+  --first-color-lighter: hsl(var(--hue-color), 82%, 75%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color-light: hsl(var(--hue-color), 8%, 90%);
+  --input-color: hsl(var(--hue-color), 70%, 90%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  /*========== Font and typography ==========*/
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 800;
+
+  /*========== Margins Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* FOOTER  STYLES */
+.footer {
+  background-color: var(--first-color-lighter);
+}
+
+.footer__icon {
+  color: var(--first-color-alt);
+}
+
+.footer__title {
+  font-size: var(--h2-font-size);
+}
+
+.footer__icon:hover {
+  color: var(--first-color-second);
+}
